@@ -19,7 +19,7 @@ const siteRoot      = '_site';
 // =============================================================================
 //
 gulp.task('sass', function(){
-  return gulp.src('assets/css/_core.scss')
+  return gulp.src('assets/scss/core.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss([ autoprefixer({ browsers: ['last 12 versions'] }) ]))
     .pipe(gulp.dest('_site/assets/css'))
