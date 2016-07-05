@@ -1,4 +1,7 @@
-@import "0-base/variables";
+@import "globals/variables";
 @import "0-base/typography";
 @import "0-base/base";
-@import "globals/header";
+@import "0-base/old";
+@import "partials/header";
+@import "partials/nav-aside";
+@import "pages/index";
