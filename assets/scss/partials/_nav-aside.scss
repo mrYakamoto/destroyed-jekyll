@@ -1,0 +1,35 @@
+aside.nav-aside {
+
+  &.fixed-theme {
+  	margin-top: -47px;
+  }
+
+  margin-top: 20px;
+  padding-top: 20px;
+  position: fixed;
+  padding-left: 45px;
+  color: white;
+  height: 100%;
+  margin-left: 5px;
+
+  ul {
+  	padding-top: 20px;
+ 	border-top: 1px solid white;
+  
+  	li {
+
+  	  a.nav-link {
+  	    color: white;
+  	    padding-left: 10px;
+
+  	    &:hover {
+  	  	  background-color: #999b9e;
+  	    }
+  	  }
+  	}
+  }
+
+  .nav-highlight {
+  	background-color: #999b9e;
+  }
+}

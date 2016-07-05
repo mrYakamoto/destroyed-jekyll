@@ -1,0 +1,244 @@
+body {
+  padding-top: 125px;
+  background-color: black;
+
+}
+/* Navigation */
+* {
+  transition: 0.8s;
+  -webkit-transition:  0.8s;
+}
+
+/*body.modal-open { overflow:inherit; padding-right:inherit !important; }*/
+header#header {
+
+
+  .navbar-fixed-top {
+    padding: 20px 0 20px 0;
+  }
+
+}
+
+footer { padding: 30px 0; }
+
+.navbar.navbar-fixed-top.fixed-theme {
+  background-color: #222;
+  border-color: #080808;
+  box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-container.fixed-theme { padding: 0; }
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+  transition: 0.8s;
+  -webkit-transition:  0.8s;
+}
+.navbar-nav { background-color: black; }
+span.icon-bar { background-color: black ; }
+span.icon-bar
+button.navbar-toggle.collapsed { border: 1px solid black; }
+.navbar-brand {
+  font-family: 'IM Fell English', serif, 'Fjalla One',Helvetica,sans-serif;
+  font-style: italic;
+}
+
+
+.dropdown {
+  position: fixed;
+  top: 133px;
+  z-index: 2000;
+  width: 100%;
+  left: 0;
+}
+
+.dropdown ul {
+  padding-bottom: 10px;
+}
+
+.dropdown.fixed-theme {
+  top: 65px;
+}
+
+.nav-aside {
+  margin-top: 20px;
+  padding-top: 20px;
+  position: fixed;
+  padding-left: 45px;
+  color: white;
+  height: 100%;
+  margin-left: 5px;
+}
+.nav-aside ul {
+  padding-top: 20px;
+  border-top: 1px solid white;
+}
+.nav-aside li a {
+  color: white;
+  padding-left: 10px;
+}
+.nav-aside li a:hover {
+  background-color: #999b9e;
+}
+.nav-aside.fixed-theme{
+  margin-top: -47px;
+}
+
+.nav-highlight {
+  background-color: #999b9e;
+}
+
+.nav-link:hover {
+  background-color: #999b9e;
+}
+
+/* Featured image and image containers */
+
+#featured-section,
+#past-section {
+  background-image: url('../img/background/stars-purp.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#coming-soon-section,
+#about-section,
+#contact-section {
+  background-image: url('../img/background/stars-green.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#featured-section { padding-top: 15px;}
+#contact-section { padding-bottom: 100px; }
+
+.featured-container {
+  position: relative;
+}
+.image-container:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.movie-title {
+  position: relative;
+  z-index:2;
+
+}
+
+.featured-hero {
+    width: 100%;
+  }
+.movie-img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+section h2,
+section h3 {
+  font-family: 'Fjalla One',Helvetica,sans-serif;
+  font-weight: 100;
+  color: white;
+}
+section h4 {
+  color: white;
+}
+
+iframe.trailer {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.trailer-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.trailer-container .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.movie-container {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+
+  margin-bottom: 15px;
+}
+.movie-container .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.movie-container img {
+  display: block;
+  position: relative;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+.movie-container:hover {
+  cursor: pointer;
+  background: #42b078;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+.movie-container:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.movie-container h2 {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+}
+.movie-container i.play-button,
+.movie-container .movie-title {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+.movie-container .movie-title {
+  color: white;
+}
+.movie-container i.play-button {
+  color: rgba(0,0,0,0.4);
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.movie-container:hover i.play-button,
+.movie-container:hover .movie-title {
+  opacity: 100;
+}
+

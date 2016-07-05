@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include partials/head.html %}
 
   <body>
-    {% include header.html %}
-    {% include nav-aside.html %}
-    {% include featured.html %}
-    {% include main_content_temp.html %}
+    {% include partials/header.html %}
+    {% include partials/nav-aside.html %}
+    
+    
     {{ content }}
 
-    {% include foot.html %}
+    {% include partials/foot.html %}
   </body>
-  
 </html>

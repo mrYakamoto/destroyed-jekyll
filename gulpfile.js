@@ -31,7 +31,7 @@ gulp.task('sass', function(){
 // =============================================================================
 //
 gulp.task('pug', function(){
-  return gulp.src('_pugfiles/*.pug')
+  return gulp.src('_pugfiles/*/*.pug')
   .pipe(pug({pretty: true}))
   .pipe(gulp.dest('_includes'));
 });
