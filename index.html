@@ -1,4 +1,130 @@
----
-layout: default
----
-{% include pages/main_content_temp.html %}
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Destroyed</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css"/>
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic" type="text/css"/>
+  <link rel="stylesheet" href="/assets/css/core.css"/>
+</head>
+
+  <body>
+    
+<header class="container" id="header">
+  <div class="row">
+    <div class="col-lg-12" id="header-container">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header"><span class="navbar-brand" id="brand" href="#">Destroyed<small id="subtitle">Films of crushing emotional weight</small></span>
+          <button class="navbar-toggle" id="dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+      </nav>
+    </div>
+    <div class="collapse navbar-collapse dropdown" id="collapse">
+      <ul class="nav navbar-nav visible-xs text-center" id="collapse-ul">
+        <li><a class="nav-link" href="#" data-linked-item="#featured-section">Featured</a></li>
+        <li><a class="nav-link" href="#" data-linked-item="#coming-soon-section">Coming Soon</a></li>
+        <li><a class="nav-link" href="#" data-linked-item="#past-section">Past</a></li>
+        <li><a class="nav-link" href="#" data-linked-item="#about-section">About</a></li>
+        <li><a class="nav-link" href="#" data-linked-item="#contact-section">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+    
+<div class="container-fluid">
+  <div class="row">
+    <aside class="nav-aside col-sm-3" id="nav-aside">
+      <div class="collapse navbar-collapse">
+        <ul class="nav nav-pills nav-stacked hidden-xs">
+          <li><a class="nav-link" href="#" data-linked-item="#featured-section">Featured</a></li>
+          <li><a class="nav-link" href="#" data-linked-item="#featured-section">Coming Soon</a></li>
+          <li><a class="nav-link" href="#" data-linked-item="#featured-section">Past</a></li>
+          <li><a class="nav-link" href="#" data-linked-item="#featured-section">About</a></li>
+          <li><a class="nav-link" href="#" data-linked-item="#featured-section">Contact         </a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+    
+    
+    
+<section class="col-xs-12 col-sm-9 col-sm-offset-3" id="featured-section">
+  <h2>Featured</h2>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="movie-container"><img src="/assets/img/the-elephant-man-hero.jpg"/>
+        <div class="overlay" data-trailer-url="https://www.youtube.com/embed/2ToC4vh_itg?rel=0">
+          <h2 class="movie-title">The Elephant Man</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="col-xs-12 col-sm-9 col-sm-offset-3" id="coming-soon-section">
+  <h2>New / Coming Soon</h2>
+  <div class="row">
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/45-years.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/Tg5cpiX18TA">
+        <h2 class="movie-title">45 Years</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/light-between-oceans.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/w51IR_BFGyc">
+        <h2 class="movie-title">The Light Between Oceans</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/the-wailing.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/TVTbF379ORM">
+        <h2 class="movie-title">The Wailing</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/the-club2.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/e8c2DYoF7lA">
+        <h2 class="movie-title">The Club</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/embrace-of-the-serpent2.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/4ff7TcnqHUc">
+        <h2 class="movie-title">Embrace of the Serpent</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true">                       </i>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+<section class="col-xs-12 col-sm-9 col-sm-offset-3" id="past-section">
+  <h2>Canon</h2>
+  <div class="row">
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/magnolia.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/cxcegktcxSM">
+        <h2 class="movie-title">Magnolia</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/beaches.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/G59ivoXtmW4">
+        <h2 class="movie-title">Beaches</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-xs-6 movie-container"><img class="img-responsive" src="/assets/img/bicycle-thief2.jpg"/>
+      <div class="overlay" data-trailer-url="https://www.youtube.com/embed/oqib1EaY5G8">
+        <h2 class="movie-title">Bicycle Thief</h2><i class="fa fa-play-circle play-button fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+<script src="/assets/js/jquery-2.2.4.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.easing.min.js"></script>
+<script src="/assets/js/jquery.fittext.js"></script>
+<script src="/assets/js/main.js"></script>
+  </body>
+</html>
