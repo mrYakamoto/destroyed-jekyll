@@ -14,6 +14,8 @@ const autoprefixer  = require('autoprefixer');
 
 const siteRoot      = '_site';
 
+// const deploy        = require('gulp-gh-pages');
+
 // =============================================================================
 // Convert SASS to CSS
 // =============================================================================
@@ -79,3 +81,11 @@ gulp.task('serve', () => {
 // =============================================================================
 //
 gulp.task('default', ['sass', 'pug', 'jekyll', 'serve']);
+
+/**
+ * Push build to gh-pages
+ */
+// gulp.task('deploy', function () {
+//   return gulp.src("./_site/**/*")
+//     .pipe(deploy())
+// });
